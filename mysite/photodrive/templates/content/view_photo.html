@@ -1,0 +1,34 @@
+{% extends '../base.html' %}
+{% block title %}
+View Photo
+{% endblock %}
+
+{% block navbar %}
+{% include "content/navbar.html" %}
+{% endblock %}
+
+{% block content %}
+<h1 class="text-center mb-5 mt-3 font-weight-bold">Gallery</h1>
+
+<div class="card-group justify-content-center">
+    {% for image in gallery %}
+    <div class="card mb-5 mx-2" style="min-width: 18rem; max-width: 18rem;">
+        <a href="{{ image.get_absolute_url }}"><img class="card-img-custom img-fluid" src="{{ image.photo.url }}" width=""/></a>
+        <div class="card-body">
+            <h5 class="card-title">
+                {{ image.name }}
+            </h5>
+        </div>
+        <div class="card-footer">
+            Added on {{ image.added_date }}
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+
+
+
+
+
+{% endblock %}

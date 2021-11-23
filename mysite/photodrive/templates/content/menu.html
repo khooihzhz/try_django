@@ -1,0 +1,28 @@
+{% extends '../base.html' %}
+
+{% block title %}
+Main Page
+{% endblock %}
+
+ {% block navbar %}
+{% include "content/navbar.html" %}
+ {% endblock %}
+
+{% block content %}
+ <div class="container-fluid d-flex justify-content-center align-items-center h-75">
+  <div class="grid">
+   <div class="row">
+     <h1 class="p-3 main-title">Welcome to Gotcha</h1>
+   </div>
+   <div class="row justify-content-center mt-5">
+    <div class="text-center">
+     <a class="text-white custom-btn btn-block" href="{% url 'upload' %}">Add photo</a>
+     <a class="text-white custom-btn btn-block" href="{% url 'gallery' %}">View Photo</a>
+    </div>
+
+   </div>
+  </div>
+
+
+ </div>
+{% endblock %}

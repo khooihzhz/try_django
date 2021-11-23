@@ -1,0 +1,10 @@
+2021-06-21 18:37:04 user testingadmin logged out
+2021-06-21 18:43:36 : user testaccount1 logged in 
+2021-06-21 18:43:44 user testaccount1 logged out
+2021-06-21 18:43:58 user testaccount1 failed to login
+2021-06-21 18:44:08 user " or ""=" failed to login
+2021-06-21 18:44:26 : user testaccount1 logged in 
+2021-06-21 18:45:34 user testaccount1 logged out
+2021-06-21 18:46:14 : user testaccount2 logged in 
+2021-06-21 18:46:31 user testaccount2 logged out
+2021-06-21 18:46:46 : user testingadmin logged in 

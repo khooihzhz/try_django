@@ -1,0 +1,97 @@
+
+
+.asteriskField {
+    display: none;
+}
+
+/* Register Form CSS */
+.register-form {
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.register-text{
+    text-align: center;
+    height: 80px;
+    background: -webkit-linear-gradient(left, #0072ff, #8811c5);
+    color: #fff;
+    font-weight: bold;
+    line-height: 80px;
+    border-radius: 5px;
+}
+
+.custom-btn {
+	box-shadow: 0px 3px 14px -5px #3e7327;
+    background: #77b55a linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
+    border-radius:5px;
+	border:2px solid #4b8f29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+    font-family: Roboto, sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	padding:10px 20px;
+	text-decoration:none;
+}
+.custom-btn:hover {
+    background: #72b352 linear-gradient(to bottom, #72b352 5%, #77b55a 100%);
+}
+.custom-btn:active {
+	position:relative;
+	top:1px;
+}
+
+.navbar-brand{
+    margin: 0;
+    padding: 0;
+}
+
+.main-title {
+    font-family: "Lucida Console", Monaco, monospace;
+    color: #444444;
+    background: #FFFFFF;
+    text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+    border: 5px dashed rgba(0,0,0,0.46);
+    border-radius: 10px;
+}
+
+.card-img-custom {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+#g-recaptcha-response {
+    display: block !important;
+    position: absolute;
+    margin: -78px 0 0 0 !important;
+    width: 302px !important;
+    height: 76px !important;
+    z-index: -999999;
+    opacity: 0;
+}
+
+@media (min-width: 576px) {
+    html {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 992px) {
+    html {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    html {
+        font-size: 1.5rem;
+    }
+}

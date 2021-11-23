@@ -1,0 +1,56 @@
+{% extends '../base.html' %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="container d-flex justify-content-center h-100">
+    <div class="row register-form border my-auto">
+        <form method="post">
+            {% csrf_token %}
+                <div class="col-md-12 text-center register-text">
+                Register
+                </div>
+                <div class="form-group col-md-12 mb-0 mt-3 font-weight-bold">
+                {{ register_form.username |as_crispy_field }}
+                </div>
+
+                <div class="form-group col-md-12 mb-0 mt-3 font-weight-bold">
+                    {{ register_form.email | as_crispy_field }}
+                </div>
+
+               <div class="form-group col-md-12 mb-0 mt-3 font-weight-bold">
+                    {{ register_form.password1 | as_crispy_field }}
+                </div>
+
+                <div class="form-group col-md-12 mb-0 mt-3 font-weight-bold">
+                    {{ register_form.password2 | as_crispy_field }}
+                </div>
+
+                <div class="form-group col-md-12 mb-0 mt-3 font-weight-bold">
+                    {{ register_form.captcha }}
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary btn-sm text-center"> Submit </button>
+                    <p class="font-italic mt-3"> Already have an account? <a class="font-weight-bold" href="/login">Sign In here</a></p>
+                </div>
+
+        </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+ <script>
+     window.onload = function() {
+    var $recaptcha = document.querySelector('#g-recaptcha-response');
+
+    if($recaptcha) {
+        $recaptcha.setAttribute("required", "required");
+    }
+};
+ </script>
+{% endblock %}
